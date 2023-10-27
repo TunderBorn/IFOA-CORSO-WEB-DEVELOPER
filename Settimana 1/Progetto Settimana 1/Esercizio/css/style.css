@@ -1,0 +1,122 @@
+/* Your styles here */
+/* Impostazioni Generali */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&-Open+Sans&display=swap");
+
+html,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.1;
+  font-size: 1.2em;
+}
+
+h1,h3 {
+  font-family: "Montserrat";
+  font-style: bold;
+  color: #25a2c3;
+}
+
+h2 {
+padding-top: 5%;
+}
+
+h4 {
+    margin: 0;
+}
+
+h6,h7 {
+    padding-bottom: 5%;
+}
+
+#titolo {
+  padding-top: 5%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  margin: 10px;
+}
+
+/* Header */
+header {
+  background-color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  text-align: center;
+  width: 30%;
+  margin: 5%;
+}
+
+/* Main */
+main {
+  text-align: center;
+  margin-top: -30;
+}
+
+#sfondoPc {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+}
+
+.Button {
+  background-color: #f04c2f;
+  font-family: "Montserrat";
+  font-style: bold;
+  color: white;
+  border: 0;
+  padding: 10px;
+  margin: 7%;
+  width: 120px;
+  border-radius: 5px;
+}
+
+#notebook {
+    border-radius: 50%;
+}
+
+#testimonianze {
+    background-color: #e22d0e;
+    color: white;
+}
+
+#citazione {
+    margin-top: 7px;
+    font-size: 0.7em;
+    padding-bottom: 30px;
+}
+
+#schede {
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.096);
+    max-width: 100%;
+    margin: 10px;
+}
+
+.foto img {
+    margin: 0%;
+    max-height: 100%;
+    width: 100%;   
+}
+
+/* Footer */
+footer {
+    margin-bottom: -30;
+  padding: 0;
+  line-height: 1.1;
+  font-size: 1.2em;
+    text-align: center;
+    background-color: #25a2c3;
+    color: white;
+}
+
+address p {
+    margin: 2;
+}
+
+.footer {
+    text-decoration: underline;
+}

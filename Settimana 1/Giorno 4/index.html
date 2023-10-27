@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Assets/Css/Style.css"></a>
+    <title>Document</title>
+  </head>
+
+  <body>
+    
+    <!--Logo e home-->
+    <header>
+        <img src="Assets/img/logo.svg" id="logo" alt="logo" />
+        <h2>EPICODE - IL BLOG DEI DEVELOPERS</h2>
+        <ul id="listaMenu">
+          <li>HOME</li>
+          <li>ARTICOLI</li>
+          <li>JOB</li>
+        </ul>
+    </header>
+
+    <main id="template">
+      <div>
+      <!--Tutti contenuti-->
+      <h1>Come creare un template per i post</h1>
+      <p><i class="fa-solid fa-square-pen"></i> di Mario Rossi - <i class="fa-solid fa-clock"></i> pubblicato il 25-10-2020</p>
+     </div>
+
+     <div>
+      <p>La prima cosa da fare è suddividere in blocchi la pagina, identificando le <span>parti comuni</span> da applicare a tutte le pagine</p>
+      </div>
+
+      <div>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione del tag <mark>&lt;header&gt;</mark></li>
+          <li>Contenuti centrali variabili del tag <mark>&lt;main&gt;</mark>(corpo principale)</li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <mark>&lt;footer&gt;</mark></li>
+        </ul>
+      </div>
+
+      <h3>Formattazione del codice</h3>
+      <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
+      <ol>
+        <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+        <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+        <li>Applicare gli stili CSS</li>
+      </ol>
+
+      <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
+
+      <table>
+        <tr>
+          <th>Diffusione dei CSS</th>
+        </tr>
+
+        <tr>
+          <td>Anno</td>
+          <td>%di utilizzo</td>
+          <td>Supporto borwsers</td>
+        </tr>
+
+        <tr>
+          <td>2000</td>
+          <td>20%</td>
+          <td>17%</td>
+        </tr>
+
+        <tr>
+          <td>2002</td>
+          <td>35%</td>
+          <td>22%</td>
+        </tr>
+
+        <tr>
+          <td>2004</td>
+          <td>45%</td>
+          <td>43%</td>
+        </tr>
+
+        <tr>
+          <td>2008</td>
+          <td>80%</td>
+          <td>51%</td>
+        </tr>
+
+        <tr>
+          <td>2012</td>
+          <td>100%</td>
+          <td>76%</td>
+        </tr>
+      </table>
+    </main>
+
+    <aside>
+      <!--Articoli Correlati-->
+    </aside>
+
+    <footer>
+      <!--Contenuti finali-->
+    </footer>
+  </body>
+</html>
