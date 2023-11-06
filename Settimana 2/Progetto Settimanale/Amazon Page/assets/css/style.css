@@ -1,0 +1,138 @@
+/* Your styles here */
+
+/* DATI GENERALI */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+    font-size: 1.2em;
+}
+
+li,h2,h4,p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+li,h2,h4 {
+color: white;
+}
+
+#giftCards,span,#Button {
+    font-size: 14px;
+}
+
+/* HEADER */
+header {
+  background-color: #222f3f;
+  padding-top: 5px;
+}
+
+#logo {
+    width: 5%;
+    padding: 15px;
+}
+
+#menu {
+background-color: #364759;
+}
+
+li{
+    display: inline;
+    margin-left: 9px;
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+
+
+
+/* MAIN */
+#principale {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.giftCards {
+    background-color: #F56600;
+}
+
+#giftCards {
+    padding: 10px;
+    color: white;
+}
+
+.holidayGift {
+    background-image: url("../images/bg-image.png");
+    background-size: cover;
+    height: 180px;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 60px;
+    padding-bottom: 2px;
+    margin: 0;
+}
+
+h4 {
+    padding-top: 2px;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.gift {
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.096);
+    max-width: 100%;
+    margin: 10px;
+}
+
+.perfectGift {
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+}
+
+.img {
+    
+    height: 45%;
+    width: 20%;  
+margin-left: 70px;
+margin-bottom: 10px;
+border-radius: 10px;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.096);
+}
+
+.bigImg {
+    max-width: 100%;
+    margin: 10px;
+}
+
+#bigImg {
+    margin-top: 0;
+}
+
+#poster {
+    margin: 0%;
+    max-height: 100%;
+    width: 100%; 
+}
+
+span {
+    color: #2B7A87;
+    padding-left: 15px;
+}
+/* FOOTER */
+footer {
+    background-color: #222f3f;
+    text-align: center;
+    color: white;
+  }
+
+#Button {
+padding: 15px;
+}
+
+#logoBottom {
+    width: 7%;
+    padding: 30px;
+    
+}
