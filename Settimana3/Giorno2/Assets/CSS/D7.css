@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+body div,
+footer {
+  padding: 1rem;
+}
+
+
+.sfondoVerde {
+  background-color: green;
+}
+
+
+.tabella {
+width: 50vw;
+margin: 0 auto;
+border: 2px solid black;
+
+}
+
+footer {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+}
+
+
+.myHeading {
+  color: #ff00d6;
+}
