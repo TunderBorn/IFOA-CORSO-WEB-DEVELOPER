@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap");
+/* GENERALI */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header,
+li,
+#intestazione,
+#M {
+  display: inline-block;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+}
+
+header,
+.giallo {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+}
+
+button {
+  color: #fff;
+  background-color: black;
+  border-radius: 25px;
+  width: 100px;
+  height: 30px;
+}
+
+.news h4,
+.testo h4 {
+  font-size: 0.7em;
+}
+
+.news h2,
+.sidebar h2 {
+  font-size: 1em;
+}
+
+.news span,
+.testo span {
+  font-size: 0.8em;
+}
+
+/* HEADER */
+header img,
+ul {
+  margin: 25px 150px;
+}
+
+ul {
+  float: right;
+}
+
+/* DIV = "giallo" */
+.giallo {
+  margin-top: -10px;
+  height: 480px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#intestazione {
+  padding: 100px 70px;
+}
+
+#intestazione h2 {
+  font-family: "Spectral", serif;
+  font-size: 80px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#intestazione h3 {
+  font-weight: 400;
+  font-size: 20px;
+  width: 360px;
+  margin: 0;
+}
+
+#intestazione button {
+  font-size: 1em;
+  margin-top: 40px;
+  width: 180px;
+  height: 40px;
+}
+
+#m {
+  position: absolute;
+  right: 0;
+}
+
+/* MEDIUM */
+#medium {
+  font-size: 15px;
+  margin-left: 100px;
+}
+
+/* TRENDING */
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.news {
+  margin: 15px 100px 10px 100px;
+  width: 17%;
+  max-height: 30%;
+  overflow: hidden;
+}
+
+.news img {
+  width: 18px;
+  border-radius: 5px;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.articoli {
+  width: 700px;
+  height: 100px;
+
+  background-color: azure;
+  margin: 30px 20px 20px 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.testo h4,
+h2,
+h3,
+span {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.testo h2 {
+  font-size: 1.2em;
+}
+
+.testo h3 {
+  font-size: 0.8em;
+}
+
+.testo img {
+  width: 250px;
+  height: 100px;
+  float: right;
+}
+
+.sidebar {
+  position: sticky;
+  top: 150px;
+  margin-left: 100px;
+  margin-top: 25px;
+  width: 400px;
+  max-height: 200px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.container button {
+  position: fixed;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgb(202, 202, 202);
+  color: gray;
+  position: sticky;
+  top: 100px;
+  max-width: 200px;
+  max-height: 50px;
+  margin: 10px;
+}
+
+.aside {
+  display: inline-block;
+}
+
+.side {
+    display: block;
+}
+
+.footer {
+    position: sticky;
+    top: 250px;
+    margin-top: 60px;
+}
