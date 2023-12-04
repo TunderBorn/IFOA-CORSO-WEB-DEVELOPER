@@ -1,0 +1,18 @@
+/* GENERALI */
+body {
+    background-color: #141414;
+}
+
+nav li {
+color: #fff;
+}
+
+/* FOOTER */
+footer li {
+font-size: 14px;
+line-height: 30px;
+}
+
+footer p {
+    font-size: 12px;
+}
