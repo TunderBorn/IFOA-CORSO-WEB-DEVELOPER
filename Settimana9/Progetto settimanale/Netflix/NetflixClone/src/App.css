@@ -1,0 +1,21 @@
+.images {
+    width: 230px;
+    height: 120px;
+    object-fit: cover;
+    object-position: 0px 25%;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .images {
+        width: 190px;
+        height: 120px;
+        object-fit: cover;
+        object-position: 0px 25%;
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+}

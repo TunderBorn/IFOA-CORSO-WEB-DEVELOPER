@@ -1,0 +1,25 @@
+/* GENERALI */
+body {
+    background-color: #141414;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+/* [HOME PAGE] */
+nav li {
+color: #fff;
+}
+
+/* FOOTER */
+footer li {
+font-size: 14px;
+line-height: 30px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+/* [PROFILO] */
