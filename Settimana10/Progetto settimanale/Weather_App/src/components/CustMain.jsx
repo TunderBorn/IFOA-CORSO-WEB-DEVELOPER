@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import React, {useState} from 'react';
 import Search_Icon from '../Images/Icons/search.png';
 import Clear_Icon from "../Images/Icons/clear.png";
 import Cloud_Icon from "../Images/Icons/cloud.png";
@@ -13,6 +14,8 @@ import Humidity_Icon from "../Images/Icons/humidity.png";
 function Main() {
 
   let api_key="a7c18d8f0c760dc2d008770529ee33da";
+
+  const [wicon, setWicon] = useState(Cloud_Icon);
   
   const search = async () => {
     const element = document.getElementsByClassName('cityInput');
@@ -33,6 +36,22 @@ function Main() {
     wind[0].innerHTML = data.wind.speed + 'km/h';
     temperature[0].innerHTML = data.main.temp + '°C';
     location[0].innerHTML = data.name;
+
+    if(data.weather[0].main === "Clear") {
+      setWicon(Clear_Icon);
+    }
+    else if(data.weather[0].main === "Clouds") {
+      setWicon(Cloud_Icon);
+    }
+    else if(data.weather[0].main === "Snow") {
+      setWicon(Snow_Icon);
+    }
+    else if(data.weather[0].main === "Drizzle") {
+      setWicon(Drizzle_Icon);
+    }
+    else if(data.weather[0].main === "Rain") {
+      setWicon(Rain_Icon);
+    }
   }
 
   return (
@@ -48,7 +67,7 @@ function Main() {
         <Row className='d-flex align-items-center justify-content-center my-2'>
           <Col xs={6}>
             <div>
-              <img src={Cloud_Icon} alt=""></img>
+              <img src={wicon} alt=""></img>
             </div>
           </Col>
           <Col xs={6}>
