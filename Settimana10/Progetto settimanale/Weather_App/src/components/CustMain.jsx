@@ -22,7 +22,7 @@ function Main() {
     if(element[0].value === "") {
       return 0;
     }
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&APPID=${api_key}`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${element[0].value}&units=Metric&APPID=${api_key}`;
 
     let response = await fetch(url);
     let data = await response.json();
@@ -32,24 +32,24 @@ function Main() {
     const temperature = document.getElementsByClassName('temp');
     const location = document.getElementsByClassName('weatherLocation');
 
-    humidity[0].innerHTML = data.main.humidity + '%';
-    wind[0].innerHTML = data.wind.speed + 'km/h';
-    temperature[0].innerHTML = data.main.temp + '°C';
-    location[0].innerHTML = data.name;
+    humidity[0].innerHTML = data.list[0].main.humidity + '%';
+    wind[0].innerHTML = data.list[0].wind.speed + 'km/h';
+    temperature[0].innerHTML = data.list[0].main.temp + '°C';
+    location[0].innerHTML = data.city.name;
 
-    if(data.weather[0].main === "Clear") {
+    if(data.list[0].weather[0].main === "Clear") {
       setWicon(Clear_Icon);
     }
-    else if(data.weather[0].main === "Clouds") {
+    else if(data.list[0].weather[0].main === "Clouds") {
       setWicon(Cloud_Icon);
     }
-    else if(data.weather[0].main === "Snow") {
+    else if(data.list[0].weather[0].main === "Snow") {
       setWicon(Snow_Icon);
     }
-    else if(data.weather[0].main === "Drizzle") {
+    else if(data.list[0].weather[0].main === "Drizzle") {
       setWicon(Drizzle_Icon);
     }
-    else if(data.weather[0].main === "Rain") {
+    else if(data.list[0].weather[0].main === "Rain") {
       setWicon(Rain_Icon);
     }
   }
